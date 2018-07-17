@@ -4,11 +4,11 @@
 <body>
 
 <div ng-app="myApp" ng-controller="formCtrl">
-  <form ng-submit="getData()">
+<!--  <form ng-submit="getData()">-->
     First Name: <input type="text" ng-model="firstname">
-    <button type="submit">Submit</button>
+      Second  Name: <input type="text" ng-model="secname">
   <button ng-click="click()">OK</button>
-  </form>
+  <!--</form>-->
 
 </div>
 
@@ -17,11 +17,13 @@ var app = angular.module('myApp', []);
 app.controller('formCtrl', function($scope) {
   //$scope.firstname="Salini";
 
-   $scope.getData=function(){
+  /* $scope.getData=function(){
         alert("name"+$scope.firstname);
-    }
+    }*/
 
+    
     $scope.click=function(){
+
         alert("name by click"+$scope.firstname);
     }
 });
